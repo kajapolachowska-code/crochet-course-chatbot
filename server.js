@@ -50,7 +50,7 @@ if (message.length > 3000) {
 
         const response = await client.responses.create({
 
-            model: "gpt-5-nano",
+            model: "gpt-5-mini",
 
             instructions: prompt.instructions,
 
