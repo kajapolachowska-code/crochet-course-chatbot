@@ -161,3 +161,12 @@ font-weight:600;
     }
 
 }
+.messages{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    margin-bottom:24px;
+
+    max-height:420px;
+    overflow-y:auto;
+}

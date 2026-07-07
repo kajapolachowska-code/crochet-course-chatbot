@@ -20,9 +20,9 @@ startButton.onclick = () => {
 
 function scroll() {
 
-    messages.lastElementChild?.scrollIntoView({
-        behavior: "smooth",
-        block: "end"
+    messages.scrollTo({
+        top: messages.scrollHeight,
+        behavior: "smooth"
     });
 
 }
@@ -236,11 +236,12 @@ async function sendQuestion() {
 
     } finally {
 
-        sendButton.disabled = false;
-        input.disabled = false;
-        input.focus();
+    sendButton.disabled = false;
+    input.disabled = false;
 
-    }
+    // input.focus();
+
+}
 
 }
 
